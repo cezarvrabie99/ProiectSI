@@ -242,9 +242,8 @@ def run():
                         totalDown += 1
                         empty1.append(totalDown)
                         # print(empty1[-1])
-                        x = []
+                        x = [len(empty1) - len(empty)]
                         # compute the sum of total people inside
-                        x.append(len(empty1) - len(empty))
                         # print("Total people inside:", x)
                         # if the people limit exceeds over threshold, send an email alert
                         if sum(x) >= config.Threshold:
